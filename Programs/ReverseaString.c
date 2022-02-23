@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char mystrg[30];
+    int leng,g;
+    printf("Enter the string you want to reverse:");
+    scanf("%s",mystrg);
+    leng=strlen(mystrg);
+    for(g=leng-1;g>=0;g--){
+        printf("%c",mystrg[g]);
+    }
+    return 0;
+}
