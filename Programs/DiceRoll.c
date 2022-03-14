@@ -5,7 +5,7 @@ int Diceroll(int DiceSides)
 {
   srand(time(NULL));
   int n=(DiceSides-1)+1; 
-  int DiceRoll =1+rand()%n;
+  int DiceRoll=1+rand()%n;
   return DiceRoll;
 }
 int main(int argc,char argv)
