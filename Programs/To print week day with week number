@@ -1,0 +1,20 @@
+#include <stdio.h>
+ char *(a[7])={"monday","tuesday","wednesday","thursday","friday","saturday","sunday"}; 
+void weekday(int m);
+int main() 
+{
+    int m; 
+	 printf("Enter the week day:");
+    scanf("%d",&m);
+   weekday(m);
+return 0;
+}
+void weekday(int m)
+{
+	if(m>7||m<1)
+    {
+    	printf("invalid input");
+    }
+    else
+    printf("%s",a[m-1]);
+}
