@@ -1,0 +1,21 @@
+#include <stdio.h>
+void Sum_Of_Series(int);
+int main()
+{
+  int Number;
+  printf("Enter any positive integer:");
+  scanf("%d",&Number);
+  Sum_Of_Series(Number);
+}
+void Sum_Of_Series(int Number)
+{
+  int i,Sum;
+  Sum=(Number*(Number+1)*(2*Number+1))/6;
+  for(i =1;i<=Number;i++)
+  {
+   if (i!=Number)
+     printf("%d^2+",i);
+   else
+     printf("%d^2=%d",i,Sum); 
+  } 
+}
